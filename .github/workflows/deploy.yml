@@ -6,28 +6,28 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: ⬇️ Checkout source repository
         uses: actions/checkout@v3
         with:
-          submodules: true  # if your theme is a Git submodule
+          submodules: true
           fetch-depth: 0
 
-      - name: Setup Hugo
+      - name: 🔧 Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
+      - name: ⚙️ Build Hugo site
         run: hugo --minify
 
-      - name: Deploy
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./public
           external_repository: yug95/yug95.github.io
           publish_branch: main
