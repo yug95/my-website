@@ -5,7 +5,7 @@ draft: false
 tags: ["AI", "Agentic AI", "LangChain", "Multi-agent systems"]
 ---
 
-PS: This post was automatically deployed using GitHub Actions!
+PS: This post was automatically deployed using GitHub Actions 2!
 
 The future of artificial intelligence is not just about large language models — it's about **autonomous agents** that can think, reason, and act on our behalf.
 
