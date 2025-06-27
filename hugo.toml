@@ -1,0 +1,19 @@
+baseURL = 'https://yug95.github.io/'
+languageCode = 'en-us'
+title = 'Yogesh Agrawal'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
